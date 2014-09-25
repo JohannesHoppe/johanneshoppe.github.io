@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html class="">
+<head
+
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <link rel="stylesheet" href="http://s.codepen.io/assets/reset/normalize.css">
+
+    <style class="cp-pen-styles">
+    
+    * {
+      -moz-box-sizing: border-box;
+           box-sizing: border-box;
+    }
+
+    section {
+      position: relative;
+      width: 606px;
+      margin: 0 auto;
+      z-index: 0;
+      color: white;
+    }
+
+    button {
+      cursor: pointer;
+      width: 199px;
+      display: inline-block;
+      background-color: #5E6B7F;
+      color: white;
+      text-align: center;
+      -webkit-transition: .25s ease;
+              transition: .25s ease;
+      border: none;
+      padding: 10px;
+      border-radius: 12px 12px 0 0;
+    }
+
+    div:focus button, button:focus {
+      background-color: #8DA1BF;
+      outline: none;
+    }
+
+    button:focus + p, div:focus P {
+      display: block;
+      position: absolute;
+      background-color: #8DA1BF;
+      height: 120px;
+      width: 100%;
+      left: 0;
+      z-index: 2;
+      outline: none;
+      top: 0px;
+      text-align: center;
+      padding-top: 48px;
+    }
+
+    p {
+      display: none;
+      font-size: 2em;
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    div:focus {
+      outline: none;
+    }
+
+    body {
+      padding: 3em;
+    }
+
+    .p {
+      margin-top: 300px;
+      text-align: center;
+      display: block;
+      font-size: 1em;
+    }
+    </style>
+</head>
+
+<body>
+ <section>
+   <div tabindex="0">
+     <button>Tab 1</button>
+     <p>Tab Content #1</p>
+   </div>
+   <div tabindex="0">
+     <button>Tab 2</button>
+     <p>Content for Tab #2</p>
+   </div>
+   <div tabindex="0">
+     <button>Tab 3</button>
+     <p>#3 Tab Content</p>
+   </div>
+</section>
+
+<p class="p">Test by Johannes. <a href="http://www.sitepoint.com/you-dont-need-javascript-for-that" target="_blank">See article</a>.</p>
+
+</body>
+</html>
